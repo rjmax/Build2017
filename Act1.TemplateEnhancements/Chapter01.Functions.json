@@ -1,0 +1,131 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "variables": {
+        "array1": [1,2,3,4],
+        "array2": [5,4,3,2]
+    },
+    "resources":[],
+    "outputs": {
+        "containsExampleTrue": {
+            "value": "[contains('TheQuickBrownFox','Quick')]",
+            "type": "bool"
+        },
+        "containsExampleFalse": {
+            "value": "[contains('TheQuickBrownFox','Slow')]",
+            "type": "bool"
+        },
+        "emptyTrue": {
+            "value": "[empty('')]",
+            "type": "bool"
+        },
+        "emptyFalse": {
+            "value": "[empty('NotEmpty')]",
+            "type": "bool"
+        },
+        "intersection": {
+            "value": "[intersection(variables('array1'),variables('array2'))]",
+            "type": "array"
+        },
+        "union": {
+            "value": "[union(variables('array1'),variables('array2'))]",
+            "type": "array"
+        },
+        "first": {
+            "value": "[first(variables('array2'))]",
+            "type": "int"
+        },
+        "last": {
+            "value": "[last(variables('array2'))]",
+            "type": "int"
+        },
+        "indexOf": {
+            "value": "[indexOf('abacadaba','b')]",
+            "type": "int"
+        },
+        "lastIndexOf": {
+            "value": "[lastIndexOf('abacadaba','b')]",
+            "type": "int"
+        },
+        "startsWithTrue": {
+            "value": "[startsWith('abcdec', 'a')]",
+            "type": "bool"
+        },
+        "startsWithFalse": {
+            "value": "[startsWith('abcdec', 'c')]",
+            "type": "bool"
+        },
+        "endsWithTrue": {
+            "value": "[endsWith('abcdec', 'c')]",
+            "type": "bool"
+        },
+        "endsWithFalse": {
+            "value": "[endsWith('abcdec', 'a')]",
+            "type": "bool"
+        },
+        "min": {
+            "value": "[min(20, 10, 100, 50)]",
+            "type": "int"
+        },
+        "max": {
+            "value": "[max(20, 10, 100, 50)]",
+            "type": "int"
+        },
+        "range":{
+            "value": "[range(20, 25)]",
+            "type": "array"
+        },
+        "array":{
+            "value": "[array(1)]",
+            "type": "array" 
+        },
+        "createArray":{
+            "value": "[createArray(1, 2)]",
+            "type": "array" 
+        },
+        "bool":{
+            "value": "[bool('true')]",
+            "type": "bool"
+        },
+        "lessTrue":{
+            "value": "[less(0,1)]",
+            "type": "bool"
+        },
+        "lessFalse":{
+            "value": "[less(1,0)]",
+            "type": "bool"
+        },
+        "lessOrEqualsTrue":{
+            "value": "[lessOrEquals(1,1)]",
+            "type": "bool"
+        },
+        "lessOrEqualsFalse":{
+            "value": "[lessOrEquals(1,0)]",
+            "type": "bool"
+        },
+        "greaterTrue":{
+            "value": "[greater(1,0)]",
+            "type": "bool"
+        },
+        "greaterFalse":{
+            "value": "[greater(0,1)]",
+            "type": "bool"
+        },
+        "greaterOrEqualsTrue":{
+            "value": "[greaterOrEquals(1,1)]",
+            "type": "bool"
+        },
+        "greaterOrEqualsFalse":{
+            "value": "[greaterOrEquals(0,1)]",
+            "type": "bool"
+        },
+        "equalsTrue":{
+            "value": "[equals(1,1)]",
+            "type": "bool"
+        },
+        "equalsFalse":{
+            "value": "[equals(0,1)]",
+            "type": "bool"
+        }
+	}
+}
