@@ -27,33 +27,6 @@
                 "options": {
                     "hideConfirmation": false
                 }
-            },
-            {
-                "name": "publicIp",
-                "type": "Microsoft.Network.PublicIpAddressCombo",
-                "label": {
-                    "publicIpAddress": "Public IP address",
-                    "domainNameLabel": "Domain name label"
-                },
-                "toolTip": {
-                    "publicIpAddress": "",
-                    "domainNameLabel": ""
-                },
-                "defaultValue": {
-                    "publicIpAddressName": "myPublicIP",
-                    "domainNameLabel": "foobar"
-                },
-                "constraints": {
-                    "required": {
-                        "domainNameLabel": true
-                    }
-                },
-                "options": {
-                    "hideNone": true,
-                    "hideDomainNameLabel": false,
-                    "hideExisting": true
-                },
-                "visible": true
             }
         ],
         "steps": [],
