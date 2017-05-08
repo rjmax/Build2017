@@ -51,8 +51,7 @@
                             "domainNameLabel": ""
                         },
                         "defaultValue": {
-                            "publicIpAddressName": "ip01",
-                            "domainNameLabel": "myPublicIP"
+                            "publicIpAddressName": "myPublicIP"
                         },
                         "constraints": {
                             "required": {
