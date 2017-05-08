@@ -52,7 +52,7 @@
                         },
                         "defaultValue": {
                             "publicIpAddressName": "ip01",
-                            "domainNameLabel": "foobar"
+                            "domainNameLabel": "myPublicIP"
                         },
                         "constraints": {
                             "required": {
