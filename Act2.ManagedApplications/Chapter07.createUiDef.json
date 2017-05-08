@@ -8,7 +8,7 @@
                 "name": "adminUsername",
                 "type": "Microsoft.Compute.UserNameTextBox",
                 "label": "Admin Username",
-                "toolTip": "Admin user name for the virtual machines",
+                "toolTip": "Admin user name for the virtual machine",
                 "osPlatform": "Linux"
             },
             {
@@ -18,7 +18,7 @@
                     "password": "Admin Password",
                     "confirmPassword": "Confirm password"
                 },
-                "toolTip": "Admin password for the virtual machines",
+                "toolTip": "Admin password for the virtual machine",
                 "constraints": {
                     "required": true,
                     "regex": "^(?:(?=.*[a-z])(?:(?=.*[A-Z])(?=.*[\\d\\W])|(?=.*\\W)(?=.*\\d))|(?=.*\\W)(?=.*[A-Z])(?=.*\\d)).{6,72}$",
