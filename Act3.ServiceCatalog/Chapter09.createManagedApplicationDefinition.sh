@@ -1,0 +1,3 @@
+az group create --location eastus2euap --name applicationDefinitions
+
+az managedapp definition create --authorizations f679e2cb-5c1e-4de2-973d-29107821b088:8e3af657-a8ff-443c-a75c-2fe8c4bcb635 --description "This Ubuntu Managed App has been approved by IT." --display-name "Ubuntu Managed App" --location eastus2euap --name ubuntuManagedApp --package-file-uri "https://nirajgappliancepackages.blob.core.windows.net/ryan/ubuntuManagedApp.zip" --resource-group applicationDefinitions --lock-level ReadOnly
