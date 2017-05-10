@@ -27,7 +27,7 @@
             }
         },
         "adminSshKey": {
-            "type": "securestring",
+            "type": "string",
             "defaultValue": "",
             "metadata": {
                 "description": "Password for the Virtual Machine."
