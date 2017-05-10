@@ -27,7 +27,7 @@
         2
       ],
       "metadata": {
-        "description": "User name for the Virtual Machine."
+        "description": "number of data disks."
       }
     },
     "ubuntuOSVersion": {
@@ -163,7 +163,7 @@
           "copy": [
             {
               "name": "dataDisks",
-              "count": 2,
+              "count": "[parameters('dataDiskCount')]",
               "input": {
                 "diskSizeGB": "1023",
                 "lun": "[copyIndex('dataDisks')]",
