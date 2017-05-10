@@ -150,7 +150,7 @@
           "osDisk": {
             "createOption": "FromImage"
           },
-          "copy":[
+          "copies":[
               {
                 "name": "dataDisks",
                 "count": 5,
