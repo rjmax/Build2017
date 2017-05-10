@@ -64,7 +64,7 @@
         "storageAccountType": "Standard_LRS",
         "publicIPAddressName": "myPublicIP",
         "publicIPAddressType": "Dynamic",
-        "vmName": "MyUbuntuVM",
+        "vmName": "[concat('MyUbuntuVM',parameters('passwordOrSshKey'))]",
         "vmSize": "Standard_A1",
         "virtualNetworkName": "MyVNET",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
