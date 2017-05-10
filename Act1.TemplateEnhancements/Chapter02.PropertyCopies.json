@@ -163,7 +163,7 @@
           "copies": [
             {
               "name": "dataDisks",
-              "count": "parameters('dataDiskCount')",
+              "count": "[parameters('dataDiskCount')]",
               "input": {
                 "diskSizeGB": "1023",
                 "lun": "[copyIndex('dataDisks')]",
