@@ -11,4 +11,3 @@
 
 
 Login-AzureRmAccount -Environment AzureCloudEUAP
-New-AzureRmResourceGroup -Name templateEnhancements -Location eastus2euap -Force

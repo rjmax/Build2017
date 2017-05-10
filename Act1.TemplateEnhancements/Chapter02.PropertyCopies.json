@@ -20,6 +20,16 @@
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
     },
+    "dataDiskCount": {
+      "type": "int",
+      "allowedvalues": [
+        1,
+        2
+      ],
+      "metadata": {
+        "description": "User name for the Virtual Machine."
+      }
+    },
     "ubuntuOSVersion": {
       "type": "string",
       "defaultValue": "16.04.0-LTS",
@@ -150,16 +160,16 @@
           "osDisk": {
             "createOption": "FromImage"
           },
-          "copies":[
-              {
-                "name": "dataDisks",
-                "count": 5,
-                "input":{
-                    "diskSizeGB": "1023",
-                    "lun": "[copyIndex('dataDisks')]",
-                    "createOption": "Empty"
-                  }
+          "copies": [
+            {
+              "name": "dataDisks",
+              "count": "parameters('dataDiskCount')",
+              "input": {
+                "diskSizeGB": "1023",
+                "lun": "[copyIndex('dataDisks')]",
+                "createOption": "Empty"
               }
+            }
           ]
         },
         "networkProfile": {
