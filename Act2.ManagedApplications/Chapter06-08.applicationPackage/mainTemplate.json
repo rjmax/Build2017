@@ -34,10 +34,9 @@
       }
     }
   },
-  "variables": {
-  },
+  "variables": {},
   "resources": [
-     {
+    {
       "type": "Microsoft.Solutions/appliances",
       "kind": "ServiceCatalog",
       "name": "[parameters('dnsLabelPrefix')]",
@@ -45,8 +44,8 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "applianceDefinitionId": "/subscriptions/9167af2d-c13e-4d34-9a57-8f37dba6ff31/resourceGroups/applicationDefinitions/providers/Microsoft.Solutions/applianceDefinitions/ubuntuManagedApp",
-        "ManagedResourceGroupId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, parameters('dnsLabelPrefix'), '-', uniqueString(concat(resourceGroup().name, parameters('dnsLabelPrefix'))))]",
-        "Parameters": {
+        "managedResourceGroupId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, parameters('dnsLabelPrefix'), '-', uniqueString(concat(resourceGroup().name, parameters('dnsLabelPrefix'))))]",
+        "parameters": {
           "adminUsername": {
             "value": "[parameters('adminUsername')]"
           },
