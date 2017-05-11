@@ -263,13 +263,13 @@
                     {
                         "name": "ryansms",
                         "countryCode": "1",
-                        "phoneNumber": "2069793658"
+                        "phoneNumber": "5551212"
                     }
                 ],
                 "emailReceivers": [
                     {
                         "name": "ryanemail",
-                        "emailAddress": "r.jones1@gmail.com"
+                        "emailAddress": "noreply@microsoft.com"
                     }
                 ],
                 "webhookReceivers": []
